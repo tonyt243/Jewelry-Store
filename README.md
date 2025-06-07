@@ -13,3 +13,7 @@ A simple and elegant jewelry store front-end website built with HTML and CSS. Th
 
 - HTML
 - CSS
+
+##  How to Run
+If you haven’t already, clone the project using Git: git clone https://github.com/tonyt243/Jewelry-Store
+Locate the index.html file in the project directory and double click to see the project
