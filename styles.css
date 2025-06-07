@@ -15,15 +15,12 @@
  }
 
  
- 
  .menu {
     display: flex;
     justify-content: space-around;
-    background-color:transparent;
+    background-color: transparent;
     padding: 10px;
    
- 
- 
  }
  .menu a {
     font-size: 20px;
@@ -41,9 +38,8 @@
  .category {
     padding: 20px;
     text-align: center;
+    padding-top: 30px;
     
- 
- 
  }
  .category a{
     font-size: 20px;
