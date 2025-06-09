@@ -1,19 +1,27 @@
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 #title{
     font-size: 2rem;
     font-weight: bold;
     text-align: center;
     font-family: 'Times New Roman', Times, serif;
     margin-bottom: 10px;
+    padding: 20px ;
+    
+    
    
  }
 
- 
-
  .header{
-    background-color:aliceblue;
+    background-color:wheat;
     text-align: center;
     padding: 10px ;
+    
    
  }
 
@@ -35,6 +43,7 @@
  
  .menu a:hover{
     text-decoration: underline;
+    
  }
  
  
@@ -113,18 +122,18 @@
 }
 
 .options h3 {
-    font-family: Arial, sans-serif;
+    font-family: 'Times New Roman', Times, serif;
     color: black;
     margin: 10px 0;
 }
 .options2 h3 {
-    font-family: Arial, sans-serif;
+    font-family: 'Times New Roman', Times, serif;
     color: black;
     margin: 10px 0;
 }
 
 .browse {
-    background-color: #6f5eff;
+    background-color: burlywood;
     color: white;
     border: none;
     padding: 10px 15px;
@@ -140,7 +149,7 @@
 
  
 footer {
-    background-color: whitesmoke;
+    background-color: wheat;
     padding: 40px;
     
   }
