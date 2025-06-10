@@ -1,6 +1,6 @@
 #  Jewelry Store Website
 
-A simple and elegant jewelry store front-end website built with HTML and CSS. This project showcases a clean and modern layout for a fictional jewelry brand, including a homepage, category listings, and a contact form.
+A simple and elegant jewelry store front-end website built with HTML and CSS dedicated to my parents store in Vietnam. This project showcases a clean and modern layout for a fictional jewelry brand, including a homepage, category listings, and a contact form.
 
 ##  Features
 
