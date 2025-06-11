@@ -365,13 +365,13 @@ footer {
   cursor: pointer;
   border-radius: .25rem;
   padding: 0 .5rem;
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 0, 0, 0.2);
 }
 
 .carousel-button:hover,
 .carousel-button:focus{
   color: white;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.3);
 }
 
 .carousel-button:focus{
@@ -379,11 +379,11 @@ footer {
 }
 
 .carousel-button.prev {
-  left: 1rem;
+  left: 5rem;
 }
 
 .carousel-button.next {
-  right: 1rem;
+  right: 5rem;
 }
 
 
