@@ -387,6 +387,86 @@ footer {
   right: 5rem;
 }
 
+.add-to-cart {
+  background-color: #c59a6d; 
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  font-size: 14px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  font-family: 'Segoe UI', sans-serif;
+  margin-top: 10px;
+}
+
+.add-to-cart:hover {
+  background-color: #b58857;
+  transform: scale(1.05);
+}
+
+
+.cart-container {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.cart-sidebar {
+  position: fixed;
+  top: 170px;
+  right: 20px;
+  background: aliceblue;
+  border: 1px solid #ccc;
+  padding: 15px;
+  width: 200px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+
+.cart-sidebar.hidden {
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(-10px);
+}
+
+
+.cart-container {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.cart-button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+  position: relative;
+  color: #333;
+}
+
+.cart-button i {
+  font-size: 30px;
+}
+
+#cart-count {
+  background-color: red;
+  color: white;
+  border-radius: 50%;
+  padding: 2px 6px;
+  font-size: 12px;
+  position: absolute;
+  top: -8px;
+  right: -8px;
+}
+
+
 
 
 
