@@ -17,22 +17,39 @@
    
  }
 
- .header{
-    background-color:wheat;
-    text-align: center;
-    padding: 10px ;
-    
-   
- }
+.header {
+  background-color: wheat;
+  text-align: center;
+  padding: 10px;
+  
+}
+
 
  
  .menu {
-    display: flex;
-    justify-content: space-around;
-    background-color: transparent;
-    padding: 10px;
-   
- }
+  position: sticky;
+  top: 0;
+  background-color: wheat;
+  z-index: 1000;
+  padding: 10px ;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+  
+}
+
+
+.fade-in {
+  opacity: 0;
+  animation: fadeIn 1.8s ease forwards;
+}
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
  .menu a {
     font-size: 20px;
     text-decoration: none;
