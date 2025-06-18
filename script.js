@@ -27,7 +27,8 @@ buttons.forEach(button => {
   })
 })
 
-let cart = [];
+let cart = JSON.parse(localStorage.getItem('cart')) || [];
+updateCart();
 
 function addToCart(productName, price) {
   const item = cart.find(i => i.name === productName);
@@ -38,6 +39,8 @@ function addToCart(productName, price) {
   }
   updateCart();
 }
+
+
 
 function updateCart() {
   const cartItems = document.getElementById('cart-items');
@@ -55,6 +58,8 @@ function updateCart() {
 
   cartCount.textContent = cart.reduce((sum, item) => sum + item.qty, 0);
   cartTotal.textContent = total;
+
+  localStorage.setItem('cart', JSON.stringify(cart));
 }
 
 function toggleCart() {
