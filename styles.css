@@ -357,9 +357,10 @@ footer {
 .slide > img {
   display: block;
   width: 100vw;      
-  max-height: 100vh;
+  max-height: 80vh;
   margin: 0 auto;   
   object-fit: contain;
+
 }
 
 
