@@ -20,9 +20,7 @@
 .header {
   background-color: wheat;
   text-align: center;
-  padding: 10px;
-  
-}
+  }
 
 
  
@@ -31,9 +29,9 @@
   top: 0;
   background-color: wheat;
   z-index: 1000;
-  padding: 10px ;
   text-align: center;
   display: flex;
+  padding: 10px;
   justify-content: center;
   gap: 100px;
   
