@@ -474,6 +474,49 @@ footer {
   right: -8px;
 }
 
+.contact-card-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+  width: 40vw;
+  padding: 20px;
+  margin: 0 auto;
+}
+
+#contactCardImg {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  border: 4px solid #d4af37;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+  cursor: pointer; 
+}
+
+
+#lightbox {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.8);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  cursor: zoom-out;
+}
+
+#lightbox-img {
+  max-width: 90%;
+  max-height: 90%;
+  border: 4px solid #d4af37;
+  border-radius: 12px;
+}
+
+
 
 
 

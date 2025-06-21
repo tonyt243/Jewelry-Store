@@ -1,3 +1,4 @@
+//Favorite function for products
 function toggleFavorite(element) {
   if (element.classList.contains("favorited")) {
     element.classList.remove("favorited");
@@ -8,6 +9,7 @@ function toggleFavorite(element) {
   }
 }
 
+//Images carousel
 const buttons = document.querySelectorAll("[data-carousel-button]")
 
 buttons.forEach(button => {
@@ -27,6 +29,7 @@ buttons.forEach(button => {
   })
 })
 
+//Add items to cart
 let cart = JSON.parse(localStorage.getItem('cart')) || [];
 updateCart();
 
@@ -41,7 +44,7 @@ function addToCart(productName, price) {
 }
 
 
-
+//Update cart
 function updateCart() {
   const cartItems = document.getElementById('cart-items');
   const cartCount = document.getElementById('cart-count');
@@ -62,13 +65,31 @@ function updateCart() {
   localStorage.setItem('cart', JSON.stringify(cart));
 }
 
+//Toggle on/off cart
 function toggleCart() {
   const cartDiv = document.getElementById('cart');
   cartDiv.classList.toggle('hidden');
 }
 
-
+//Clear cart
 function clearCart() {
   cart = [];
   updateCart();
 }
+
+//Click-to-zoom function for business card
+document.addEventListener('DOMContentLoaded', () => {
+  const contactCardImg = document.getElementById('contactCardImg');
+  const lightbox = document.getElementById('lightbox');
+  const lightboxImg = document.getElementById('lightbox-img');
+
+  contactCardImg.addEventListener('click', () => {
+    lightboxImg.src = contactCardImg.src;
+    lightbox.style.display = 'flex';
+  });
+
+  lightbox.addEventListener('click', () => {
+    lightbox.style.display = 'none';
+  });
+});
+
