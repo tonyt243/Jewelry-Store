@@ -386,11 +386,13 @@ footer {
 }
 
 .carousel-button.prev {
-  left: 5rem;
+  left: 10rem;
+  top: 20rem;
 }
 
 .carousel-button.next {
-  right: 5rem;
+  right: 10rem;
+  top: 20rem;
 }
 
 .add-to-cart {
