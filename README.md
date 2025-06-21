@@ -7,7 +7,9 @@ A simple and elegant jewelry store front-end website built with HTML and CSS ded
 - **Front Page** – Eye-catching landing section with hero image and store branding
 - **Products Page** – Displays different types of jewelry (e.g., rings, necklaces, earrings)
 - **Contact Us Page** – Simple form for customers to reach out
+- **Shopping Cart** – Add products to a shopping cart and persist them using browser local storage
 - **Responsive Design** – Adapts to different screen sizes for desktop and mobile
+
 
 ##  Built With
 
