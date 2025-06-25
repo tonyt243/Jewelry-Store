@@ -93,3 +93,55 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 });
 
+//Sort products in alphabetical order
+function sortProductsByName(container) {
+  const products = Array.from(container.querySelectorAll('.product-card'));
+  products.sort((a, b) => {
+    const nameA = a.querySelector('h3').textContent.trim().toLowerCase();
+    const nameB = b.querySelector('h3').textContent.trim().toLowerCase();
+    return nameA.localeCompare(nameB); // alphabetical order
+  });
+  products.forEach(product => container.appendChild(product));
+}
+
+
+//Search products
+function filterProducts() {
+  const input = document.getElementById('productSearch');
+  const filter = input.value.toLowerCase();
+  const productCards = document.querySelectorAll('.product-card');
+
+  productCards.forEach(card => {
+    const productName = card.querySelector('h3').textContent.toLowerCase();
+    if (productName.includes(filter)) {
+      card.style.display = ''; 
+    } else {
+      card.style.display = 'none'; 
+    }
+  });
+}
+
+//Search products in category
+function filterCategory() {
+  const categorySelect = document.getElementById('categorySelect');
+  const selectedCategory = categorySelect.value.toLowerCase();
+  const searchInput = document.getElementById('productSearch').value.toLowerCase();
+
+  const productCards = document.querySelectorAll('.product-card');
+
+  productCards.forEach(card => {
+    const productName = card.querySelector('h3').textContent.toLowerCase();
+    const matchesSearch = productName.includes(searchInput);
+    const matchesCategory = selectedCategory === 'all' || card.classList.contains(selectedCategory);
+
+    card.style.display = matchesSearch && matchesCategory ? '' : 'none';
+  });
+
+  
+  const galleries = document.querySelectorAll('.product-gallery');
+  galleries.forEach(gallery => sortProductsByName(gallery));
+}
+
+
+
+

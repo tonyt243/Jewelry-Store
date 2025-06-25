@@ -15,7 +15,7 @@
     <img class="logo" src="image/logotest.png" alt="My Logo">
   </header>
 
-  
+
 <div class="menu">
   <a href="index.html">Home</a>
   <a href="productsPage.html">Products</a>
@@ -32,88 +32,90 @@
 
 
 
-<h1 style="text-align: center; margin-top: 40px;">Store Products</h1>
+<h1 style="text-align: center; margin-top: 40px; font-family: 'Playfair Display', serif;">Store Products</h1>
 
 
-<div style="text-align: center; margin-top: 20px;">
+<div style="text-align: center; margin-top: 20px; font-family: 'Playfair Display', serif;">
   <p>Here you can browse our beautiful jewelry collections coming soon...</p>
 </div>
 
+<div style="text-align: center; margin: 20px 0;">
+  <input
+    type="text"
+    id="productSearch"
+    placeholder="Search products..."
+    onkeyup="filterProducts()"
+  />
+  <select id="categorySelect" onchange="filterCategory()">
+    <option value="all">All Products</option>
+    <option value="rings">Rings</option>
+    <option value="necklaces">Necklaces</option>
+    <option value="bracelets">Bracelets</option>
+    <option value="earrings">Earrings</option>
+  </select>
+</div>
+
+
 <div class="product-gallery">
-  <div class="product-card">
+  <div class="product-card rings">
     <img src="image/white-gold-ring.jpeg" alt="white-gold-ring">
     <h3>White Gold Ring</h3>
     <p>Starting at: $120</p>
     <button class="add-to-cart" onclick="addToCart('White Gold Ring', 120)">Add to Cart</button>
     <span class="favorite" onclick="toggleFavorite(this)">🤍</span>
   </div>
-  <div class="product-card">
+  <div class="product-card rings">
     <img src="image/rose-ring.jpeg" alt="rose-ring">
     <h3>Rose Gold Ring</h3>
-    <p>Starting at: $400</p>
-    <button class="add-to-cart" onclick="addToCart('Rose Gold Ring', 400)">Add to Cart</button>
+    <p>Starting at: $560</p>
+    <button class="add-to-cart" onclick="addToCart('Rose Gold Ring', 560)">Add to Cart</button>
     <span class="favorite" onclick="toggleFavorite(this)">🤍</span>
   </div>
-  <div class="product-card">
+  <div class="product-card necklaces">
     <img src="image/flower-necklace.jpeg" alt="white-gold-ring">
     <h3>Flower Diamond Necklace</h3>
     <p>Starting at: $240</p>
     <button class="add-to-cart" onclick="addToCart('Flower Diamond Necklace', 240)">Add to Cart</button>
     <span class="favorite" onclick="toggleFavorite(this)">🤍</span>
   </div>
-  <div class="product-card">
-    <img src="image/white-gold-ring.jpeg" alt="white-gold-ring">
-    <h3>White Gold Ring</h3>
-    <p>Starting at: $120</p>
-    <button class="add-to-cart" onclick="addToCart('Elegant White Gold Ring', 120)">Add to Cart</button>
+  <div class="product-card rings">
+    <img src="image/ruby-ring.webp" alt="ruby-ring">
+    <h3>Ruby Ring</h3>
+    <p>Starting at: $250</p>
+    <button class="add-to-cart" onclick="addToCart('Ruby Ring', 250)">Add to Cart</button>
     <span class="favorite" onclick="toggleFavorite(this)">🤍</span>
   </div>
-  <div class="product-card">
-    <img src="image/white-gold-ring.jpeg" alt="white-gold-ring">
-    <h3>White Gold Ring</h3>
-    <p>Starting at: $120</p>
-    <button class="add-to-cart" onclick="addToCart('Elegant White Gold Ring', 120)">Add to Cart</button>
+  <div class="product-card rings">
+    <img src="image/pattern-ring.webp" alt="pattern-ring">
+    <h3>Pattern Gold Ring</h3>
+    <p>Starting at: $100</p>
+    <button class="add-to-cart" onclick="addToCart('Pattern Gold Ring', 100)">Add to Cart</button>
+    <span class="favorite" onclick="toggleFavorite(this)">🤍</span>
+  </div>
+  <div class="product-card rings">
+    <img src="image/ornament-ring.webp" alt="ornament-ring">
+    <h3>Ornament Ring</h3>
+    <p>Starting at: $220</p>
+    <button class="add-to-cart" onclick="addToCart('Ornament Ring', 220)">Add to Cart</button>
+    <span class="favorite" onclick="toggleFavorite(this)">🤍</span>
+  </div>
+  <div class="product-card rings">
+    <img src="image/pearl-ring.webp" alt="pearl-ring">
+    <h3>Pearl Ring</h3>
+    <p>Starting at: $300</p>
+    <button class="add-to-cart" onclick="addToCart('Pearl Ring', 300)">Add to Cart</button>
+    <span class="favorite" onclick="toggleFavorite(this)">🤍</span>
+  </div>
+  <div class="product-card necklaces">
+    <img src="image/heart-necklace.jpg" alt="heart-necklace">
+    <h3>Diamond Heart Necklace</h3>
+    <p>Starting at: $600</p>
+    <button class="add-to-cart" onclick="addToCart('Diamond Heart Necklace', 600)">Add to Cart</button>
     <span class="favorite" onclick="toggleFavorite(this)">🤍</span>
   </div>
 </div>
 
-<div class="product-gallery">
-  <div class="product-card">
-    <img src="image/white-gold-ring.jpeg" alt="white-gold-ring">
-    <h3>White Gold Ring</h3>
-    <p>Starting at: $120</p>
-    <button class="add-to-cart" onclick="addToCart('Elegant White Gold Ring', 120)">Add to Cart</button>
-    <span class="favorite" onclick="toggleFavorite(this)">🤍</span>
-  </div>
-  <div class="product-card">
-    <img src="image/rose-ring.jpeg" alt="rose-ring">
-    <h3>Rose Gold Ring</h3>
-    <p>Starting at: $400</p>
-    <button class="add-to-cart" onclick="addToCart('Elegant White Gold Ring', 120)">Add to Cart</button>
-    <span class="favorite" onclick="toggleFavorite(this)">🤍</span>
-  </div>
-  <div class="product-card">
-    <img src="image/white-gold-ring.jpeg" alt="white-gold-ring">
-    <h3>White Gold Ring</h3>
-    <p>Starting at: $120</p>
-    <button class="add-to-cart" onclick="addToCart('Elegant White Gold Ring', 120)">Add to Cart</button>
-    <span class="favorite" onclick="toggleFavorite(this)">🤍</span>
-  </div>
-  <div class="product-card">
-    <img src="image/white-gold-ring.jpeg" alt="white-gold-ring">
-    <h3>White Gold Ring</h3>
-    <p>Starting at: $120</p>
-    <button class="add-to-cart" onclick="addToCart('Elegant White Gold Ring', 120)">Add to Cart</button>
-    <span class="favorite" onclick="toggleFavorite(this)">🤍</span>
-  </div>
-  <div class="product-card">
-    <img src="image/white-gold-ring.jpeg" alt="white-gold-ring">
-    <h3>White Gold Ring</h3>
-    <p>Starting at: $120</p>
-    <button class="add-to-cart" onclick="addToCart('Elegant White Gold Ring', 120)">Add to Cart</button>
-    <span class="favorite" onclick="toggleFavorite(this)">🤍</span>
-  </div>
-</div>
+
 
 <footer>
     <div class="footer-container">
@@ -124,7 +126,7 @@
         <div><strong>Store Hours:</strong></div>
         <div>Monday - Sunday: 9:00 AM - 6:30 PM</div>
         <div><strong>Phone:</strong> +84 903 743 132</div>
-        <div><strong>Email:</strong> XXXXX@XXXXX.com</div>
+        <div><strong>Email:</strong> quochuyta243@gmail.com</div>
         <div>
            <button class="follow-button" onclick="window.open('https://www.facebook.com/profile.php?id=100066898271984', '_blank')">💜 Follow Us 💜</button>
         </div>
