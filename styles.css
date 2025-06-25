@@ -443,13 +443,36 @@ footer {
   background: aliceblue;
   border: 1px solid #ccc;
   padding: 15px;
-  width: 180px;
+  width: 250px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   z-index: 1000;
+  font-family: 'Playfair Display', serif;
 
   opacity: 1;
   transform: translateY(0);
   transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+.cart-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin: 10px auto;
+}
+
+.cart-sidebar button{
+  background-color: #c59a6d; 
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  font-size: 14px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  font-family: 'Playfair Display', serif;
+  margin-top: 10px;
+  display: flex;
+  
 }
 
 
@@ -568,6 +591,24 @@ footer {
   border-color: gold;
   outline: none;
 }
+
+.about-heading {
+  text-align: center;
+  margin-top: 40px;
+  font-family: 'Playfair Display', serif;
+}
+
+.about-container {
+  margin: 20px auto;
+  padding: 20px;
+  font-size: 20px;
+  font-family: 'Playfair Display', serif;
+  border: 2px solid #ccc;
+  border-radius: 12px;
+  max-width: 1000px; 
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); 
+}
+
 
 
 

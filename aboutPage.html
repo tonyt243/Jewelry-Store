@@ -29,10 +29,10 @@
 </div>
 </div>
 
-<h1 style="text-align: center; margin-top: 40px; font-family: 'Playfair Display', serif;">About Us</h1>
-<div style="margin-top: 20px; padding: 20px; font-size: 20px; font-family: 'Playfair Display', serif;">
-  <p>Welcome to Kim Thao Trang, where timeless elegance meets personal touch. 
-     We are a family-owned business passionate about helping you find the perfect piece — whether it’s a meaningful gift, a sparkling statement, or a treasured family heirloom.
+<h1 class="about-heading">About Us</h1>
+<div class="about-container">
+  <p>Welcome to Kim Thao Trang, where timeless elegance meets personal touch. ...</p>
+  We are a family-owned business passionate about helping you find the perfect piece — whether it’s a meaningful gift, a sparkling statement, or a treasured family heirloom.
      At our shop, we specialize in:
   </p>
   <p style="padding-top: 10px; font-size: 20px;">💫 Selling and trading fine jewelry </p>
@@ -43,7 +43,8 @@
      Thank you for supporting our small business — where every gem tells a story .</p>
 </div>
 
-<h1 style="text-align: center; margin-top: 40px; font-family: 'Playfair Display', serif;">Gallery</h1>
+
+<h1 style="text-align: center; margin-top: 40px; font-family: 'Playfair Display', serif; padding: 20px;">Gallery</h1>
 
 
 <div class="carousel" data-carousel>
@@ -127,7 +128,10 @@
   <h3 style="text-align: center; padding: 10px;">Your Cart</h3>
   <ul id="cart-items"></ul>
   <p style="text-align: center; padding: 10px;">Total: $<span id="cart-total">0</span></p>
-  <button class="browse" onclick="clearCart()" style="display: block; margin: 10px auto;">Clear Cart</button>
+  <div class="cart-buttons">
+  <button onclick="clearCart()">Clear Cart</button>
+  <button onclick="toggleCart()">Close Cart</button>
+</div>
 </div>
 
 <script src="script.js"></script>
