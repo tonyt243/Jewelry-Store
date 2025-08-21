@@ -144,19 +144,42 @@ function filterCategory() {
 
 //Frontpage image slides
 let slideIndex = 0;
+let slideTimer;
 
 function showSlides() {
-  let slides = document.getElementsByClassName("mySlides");
-  for (let i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";  
-  }
-  slideIndex++;
-  if (slideIndex > slides.length) { slideIndex = 1 }    
-  slides[slideIndex - 1].style.display = "block";  
-  setTimeout(showSlides, 4000); 
+  const slides = document.getElementsByClassName("mySlides");
+  const dots = document.getElementsByClassName("dot");
+
+  for (let i = 0; i < slides.length; i++) slides[i].style.display = "none";
+  for (let i = 0; i < dots.length; i++) dots[i].classList.remove("active");
+
+  slides[slideIndex].style.display = "block";
+  dots[slideIndex].classList.add("active");
+
+  slideIndex = (slideIndex + 1) % slides.length; 
+  slideTimer = setTimeout(showSlides, 4000);     
 }
 
-document.addEventListener("DOMContentLoaded", showSlides);
+
+function goToSlide(n) {
+  clearTimeout(slideTimer);       
+  slideIndex = n;                 
+  showSlides();                   
+}
+
+
+document.addEventListener("DOMContentLoaded", () => {
+  showSlides(); 
+
+  const dots = document.getElementsByClassName("dot");
+  for (let i = 0; i < dots.length; i++) {
+    dots[i].addEventListener("click", () => goToSlide(i));
+  }
+});
+
+
+
+
 
 
 

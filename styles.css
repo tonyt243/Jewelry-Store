@@ -618,27 +618,101 @@ footer {
 
 .mySlides {
   display: none;
-  text-align: center; 
+  text-align: center;
 }
 
 .mySlides img {
   max-width: 100%;
-  max-height: 600px;   
+  max-height: 600px;
   width: auto;
   height: auto;
   margin: 0 auto;
+  border-radius: 15px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+  border: 5px solid #d4af37;
 }
-
+  
 
 .fade {
   animation-name: fade;
-  animation-duration: 1.5s;
+  animation-duration: 2.5s;
 }
 
 @keyframes fade {
-  from { opacity: 0.4; }
-  to { opacity: 1; }
+  from {opacity: 0.3}
+  to {opacity: 1}
 }
+
+.dot {
+  height: 12px;
+  width: 12px;
+  margin: 0 5px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  cursor: pointer;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+.welcome-banner {
+  width: 100%;
+  text-align: center;
+  background: linear-gradient(90deg, #f6e7d7, #8e44ad); /* gold -> purple gradient */
+  padding: 40px 20px;
+  border-radius: 10px;
+  margin: 20px auto;
+  max-width: 900px;
+  animation: fadeInBanner 2s ease-in-out;
+}
+
+.banner-content {
+  display: flex;
+  flex-direction: column; /* stack on mobile */
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.welcome-banner {
+  width: 100%;
+  text-align: center;
+  background: linear-gradient(90deg, #fceabb, #f8d568);
+  padding: 40px 20px;
+  border-radius: 10px;
+  margin: 20px auto;
+  max-width: 1000px;
+  animation: fadeInBanner 2s ease-in-out;
+}
+
+.welcome-banner h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.5rem;
+  color:black;
+  margin-bottom: 10px;
+}
+
+.welcome-banner p {
+  font-size: 1.2rem;
+  color: black;
+}
+
+.shop-now-button {
+  font-family: 'Playfair Display', serif;
+  display: inline-block;
+  padding: 12px 25px;
+  background: #ffd700; 
+  color: black;     
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+
 
 
 
