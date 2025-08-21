@@ -609,6 +609,38 @@ footer {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); 
 }
 
+.slideshow-container {
+  width: 70%;
+  max-width: 900px;
+  position: relative;
+  margin: 40px auto;
+}
+
+.mySlides {
+  display: none;
+  text-align: center; 
+}
+
+.mySlides img {
+  max-width: 100%;
+  max-height: 600px;   
+  width: auto;
+  height: auto;
+  margin: 0 auto;
+}
+
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from { opacity: 0.4; }
+  to { opacity: 1; }
+}
+
+
 
 
 
