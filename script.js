@@ -177,6 +177,18 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 });
 
+//Time and date
+function updateClock() {
+  const now = new Date();
+  const options = { weekday: 'long', year: 'numeric', month: 'short', day: 'numeric' };
+  const time = now.toLocaleTimeString();
+  const date = now.toLocaleDateString(undefined, options);
+  document.getElementById("clock").innerHTML = date + " | " + time;
+}
+
+setInterval(updateClock, 1000);
+updateClock();
+
 
 
 
