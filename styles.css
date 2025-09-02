@@ -52,19 +52,40 @@ body {
   }
 }
 
- .menu a {
-    font-size: 20px;
-    text-decoration: none;
-    font-family: 'Playfair Display', serif;
-    color: grey;
-    padding: 10px;
- }
- 
- .menu a:hover{
-    text-decoration: underline;
-    
- }
- 
+.menu a {
+  position: relative;
+  font-size: 20px;
+  text-decoration: none;
+  font-family: 'Playfair Display', serif;
+  color: grey;
+  padding: 10px;
+  transition: color 0.3s ease; 
+}
+
+.menu a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 2px;
+  width: 100%;
+  background-color: black;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.3s ease;
+}
+
+.menu a:hover {
+  color: black;
+  text-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+}
+
+
+.menu a:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
  
  .category {
     padding: 20px;
