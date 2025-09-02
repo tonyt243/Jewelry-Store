@@ -247,17 +247,32 @@ footer {
   .footer-column  a:hover {
     text-decoration: underline;
   }
+  
   .follow-button {
     padding: 10px 20px;
     font-size: 16px;
-    background-color: #6f5eff;
-    color: white;
+    font-family: 'Playfair Display', serif;
+    background-color: gold;
+    color: black;
     border: none;
-    border-radius: 5px;
+    border-radius: 30px; /* smoother pill shape */
     cursor: pointer;
     text-align: center;
-    transition: background-color 0.3s;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
   }
+  
+  .follow-button:hover {
+    background-color: #ffd700; /* brighter gold */
+    transform: translateY(-3px) scale(1.05); /* lift + slight grow */
+    box-shadow: 0 8px 12px rgba(0,0,0,0.2);
+  }
+  
+  .follow-button:active {
+    transform: translateY(0) scale(0.95); /* press down effect */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+  }
+  
 
 .product-gallery {
   display: flex;
