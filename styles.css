@@ -85,18 +85,6 @@ body {
   transform-origin: left;
 }
 
-@media (max-width: 768px) {
-  .menu {
-    flex-direction: row; 
-    align-items: center;
-  }
-
-  .menu a {
-    width: 100%;             
-    text-align: center;     
-    padding: 12px 0;        
-  }
-}
 
  
  .category {
