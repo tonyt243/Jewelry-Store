@@ -87,7 +87,7 @@ body {
 
 @media (max-width: 768px) {
   .menu {
-    flex-direction: column; 
+    flex-direction: row; 
     align-items: center;
   }
 
