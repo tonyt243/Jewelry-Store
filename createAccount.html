@@ -8,7 +8,7 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap"rel="stylesheet"/>
 <script src="script.js" defer></script>
-<title>My Account</title>
+<title>Create Account</title>
 </head>
 
 
@@ -34,21 +34,27 @@
 </div>
 </div>
 
-<main class="account-container">
+ <main class="account-container">
     <div class="form-box">
-      <h2>Sign In</h2>
-      <form id="loginForm">
-        <label for="login-username">Username</label>
-        <input type="text" id="login-username" required>
+      <h2>Create Account</h2>
+      <form id="signupForm">
+        <label for="signup-username">Username</label>
+        <input type="text" id="signup-username" required>
 
-        <label for="login-password">Password</label>
-        <input type="password" id="login-password" required>
+        <label for="signup-password">Password</label>
+        <input type="password" id="signup-password" required>
 
-        <button type="submit">Sign In</button>
+        <label for="signup-confirm-password">Confirm Password</label>
+        <input type="password" id="signup-confirm-password" required>
+
+        <button type="submit">Create Account</button>
       </form>
-      <p>Don’t have an account? <a href="createAccount.html">Create one here</a></p>
+      <p>Already have an account? <a href="accountPage.html">Sign in here</a></p>
     </div>
   </main>
+
+
+
 
 
 <footer>

@@ -190,6 +190,32 @@ setInterval(updateClock, 1000);
 updateClock();
 
 
+// Create Account form validation
+document.addEventListener("DOMContentLoaded", () => {
+  const signupForm = document.getElementById("signupForm");
+  if (signupForm) {
+    signupForm.addEventListener("submit", (e) => {
+      e.preventDefault(); 
+      
+      const password = document.getElementById("signup-password").value;
+      const confirmPassword = document.getElementById("signup-confirm-password").value;
+
+      if (password !== confirmPassword) {
+        alert("❌ Passwords do not match. Please try again.");
+      } else {
+        alert("✅ Account created successfully! Redirecting to Sign In...");
+        
+        setTimeout(() => {
+          window.location.href = "accountPage.html";
+        }, 1000);
+      }
+    });
+  }
+});
+
+
+
+
 
 
 
