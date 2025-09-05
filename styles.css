@@ -79,13 +79,6 @@ body {
   text-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
 }
 
-.menu {
-  display: flex;
-  flex-wrap: wrap;       /* allow links to wrap on small screens */
-  justify-content: center; 
-  gap: 10px;
-  padding: 10px ;
-}
 
 .menu a:hover::after {
   transform: scaleX(1);
@@ -99,7 +92,7 @@ body {
   }
 
   .menu a {
-    width: 90%;             
+    width: 100%;             
     text-align: center;     
     padding: 12px 0;        
   }
