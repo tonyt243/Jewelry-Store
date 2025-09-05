@@ -35,10 +35,9 @@ body {
   z-index: 1000;
   text-align: center;
   display: flex;
-  padding: 10px;
+  padding: 10px 0;
   justify-content: center;
   gap: 100px;
-  
 }
 
 
@@ -84,6 +83,19 @@ body {
 .menu a:hover::after {
   transform: scaleX(1);
   transform-origin: left;
+}
+
+@media (max-width: 768px) {
+  .menu {
+    flex-direction: column; 
+    align-items: center;
+  }
+
+  .menu a {
+    width: 90%;             
+    text-align: center;     
+    padding: 12px 0;        
+  }
 }
 
  
